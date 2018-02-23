@@ -1,0 +1,450 @@
+
+/*--
+        Author: Timothy Tsai
+        Minor adjustments: Alexander, Tyler
+        Date Created: October, 2017
+        Class: OOSD Oct 2017
+/*
+/*-------------------Global-----------------*/
+
+body {
+    margin: 0;
+    background-image:url(../img/cloud.jpg);
+    background-attachment: fixed;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+.mySnow {
+    width: 100%;
+    height: 40vw;
+}
+
+
+div::after {
+  content: "";
+  background: url(../img/snow.gif);
+  opacity: 0.02;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+/*-------------Nav Bar----------*/
+
+@media (max-width: 62em) {
+    .navbar-nav {
+    padding-top: .425rem;
+    padding-left: 0.75rem;
+ }
+.navbar-nav .nav-item {
+    float: none;
+ }
+ .navbar-brand {
+    float: right;
+ }
+.navbar-brand,
+.navbar-nav .nav-item {
+     display: block;
+ }
+.navbar-nav .nav-item + .nav-item {
+                margin-left: 0;
+}
+.dropdown-menu {
+    position: relative;
+    float: none;
+}
+        }
+/*=========================main index=============================*/
+/*Video */
+.video-wrapper {
+    position: relative; padding-bottom: 56.25%; 
+}
+.video-wrapper video 
+{position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}
+
+#title {
+    font-size: 10vw;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(10, 10, 10, 0.5);
+    text-align: center;
+    z-index: 1;  
+    padding: 10%;
+    padding-top: 20%;
+   font-family: 'Norican', cursive; 
+}
+
+#title a {
+    color: white;
+    text-decoration: none;
+}
+/* main */
+.container1 {
+    background-image: url(../img/bg1.gif);
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 10%;
+    
+}
+
+.container2 {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10%;
+    font-size: 200%;
+    color: white;   
+}
+
+.container3 {
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+  
+}
+
+.container3 img{
+    width: 100%;
+    height: auto;  
+}
+/*Slide show*/
+    
+.container2 a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration:none;
+}
+
+
+.fadeOut {
+  opacity:0;
+  animation: fadeout 15s linear;
+}
+
+@keyframes fadeout {
+    0% {opacity:0.2}
+    20% {opacity:1}
+    90% {opacity:1}
+    100% {opacity:0.02}
+}
+
+/*================Register=====================*/
+
+.registry {
+    width: 100%;
+    height: auto;
+    padding: 25%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: white;
+}
+
+
+
+input {
+     min-width: 100px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color: #66b3ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #99ccff;
+}
+input[type=reset] {
+    width: 80%;
+    background-color: #ffa366;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]:hover {
+    background-color:   #ffc299;
+}
+
+
+/*===========Travel Package==============*/
+.box1{
+    width: 100%;
+    padding: 20%;
+    height: auto;
+    background-color: white;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.box2{
+     width: 100%;
+    height: auto;
+    padding: 5%;
+    background-color: whitesmoke;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.box3{
+     width: 100%;
+    padding: 20%;
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(252, 255, 255, 0.95);
+}
+
+.lilbox1{
+    width: 47%;
+    margin: 1.2%;
+    display: inline-block;  
+    min-width: 300px;
+    text-align: left;
+    position: relative;
+    
+    
+}
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gainsboro;
+    position: absolute;
+    text-align: center;
+    padding-top: 80%; 
+}
+
+.lilbox1:hover .overlay {
+  opacity: 0.8;
+}
+/*===========Contact==============*/
+.mybox1 {
+     width: 100%;
+    padding: 20%;
+    background-color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+.mybox2 {
+     width: 100%;
+    padding: 20%;
+    background-color: whitesmoke;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.mybox3 {
+     width: 100%;
+    padding: 10%;
+    background-color: whitesmoke;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin-top: -20px;
+    
+}
+
+.mybox5 {
+     width: 100%;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.mybox5 img {
+     border-radius: 50%;
+    width: 30%;
+}
+
+
+.myMap {
+    width: 100%;
+    height: auto;
+    font-size: 0;
+}
+/*=======Log In==========*/
+
+
+/*buttons */
+    button {
+    background-color: rgba(255, 255, 255, 0) ;
+    border: none;
+    cursor: pointer;
+}
+
+button[type=submit] {
+    width: 100%;
+    background-color: #66b3ff;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=submit]:hover {
+    background-color: #99ccff;
+}
+
+button[type=text] {
+    width: 100%;
+    background-color: #ffa366;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type=text]:hover {
+    background-color: #ffc299;
+}
+
+
+/*box*/
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 200px;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; 
+    border: 1px solid #888;
+    width: 50%; 
+}
+
+
+
+/* Animation for social Icon*/
+
+.animation {
+    font-size: 35px;
+    transition: font-size 1s;
+}
+
+.animation:hover {
+    font-size: 40px;
+}
+/* Animation for index slideshow*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
